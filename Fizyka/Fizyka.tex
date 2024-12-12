@@ -1,0 +1,105 @@
+\documentclass{article}
+\usepackage[top=10px]{geometry}
+\usepackage{amsmath}
+\usepackage[fontsize=18pt]{scrextend}
+
+\author{}
+\title{Fizyka - Wzory}
+\date{}
+
+\begin{document}
+	\maketitle
+
+	\begin{enumerate}
+		\item \textbf{Iloczyn wektorowy} $ \newline
+		 \vec{a} \times \vec{b} = (a_yb_z - a_zb_y)\vec{i} + (a_zb_x - a_xb_z)\vec{j} + (a_xb_y - a_yb_x)\vec{k}
+		 $
+		\item \textbf{Prędkość wektorowa} $ \newline
+		\vec{v}_\text{śr} = \frac{\Delta\vec{r}}{\Delta t} = \frac{\vec{r}(t + \Delta t) - \vec{r}(t)}{\Delta t}  [\frac{m}{s}]
+		$
+		
+		\item \textbf{Prędkość średnia} $ \newline
+		v_\text{śr} = \frac{x_\text{całk}}{t_\text{całk}} = \frac{\sum_{i=1}^{n}x_i}{\sum_{i=1}^{n}t_i}
+		$
+		
+		\item \textbf{Prędkość chwilowa} $ \newline
+		\vec{v} = \lim\limits_{\Delta t \rightarrow 0} \frac{\Delta \vec{r}}{\Delta t} = \frac{d \vec{r}}{dt}
+		\newline
+		v_x = \frac{dx}{dt}
+		\newline
+		v_y = \frac{dy}{dt}
+		\newline
+		v_z = \frac{dz}{dt}
+		$
+		
+		\item \textbf{Przyspieszenie} $ \newline
+		\vec{a}_\text{śr} = \frac{\Delta \vec{v}}{\Delta t} 
+		\newline
+		\vec{a} = \lim\limits_{\Delta t \rightarrow 0} \frac{\Delta \vec{v}}{\Delta t} = \frac{d \vec{v}}{d \vec{i}t}
+		\newline
+		a_x = \frac{dv_x}{dt}
+		\newline
+		a_y = \frac{dv_t}{dt}
+		\newline
+		a_z = \frac{dv_z}{dt} 
+		\newline
+		a_s = \frac{d |\vec{v}|}{dt}
+		\newline
+		a_n = \frac{v^2}{R} \longrightarrow \text{R - promień krzywizny toru}
+		\newline
+		\vec{a} = \vec{a}_s + \vec{a}_n 
+		\newline
+		\vec{a} = \lim\limits_{\Delta t \rightarrow 0} \frac{\Delta \vec{v}}{\Delta t} = \frac{d \vec{v}}{dt} = \frac{d}{dt} (\frac{d \vec{r}}{dt}) = \frac{d^2 \vec{r}}{dt^2} [\frac{m}{s^2}]
+		$
+		
+		\item \textbf{Ruch jednostajny prostoliniowy} $ \newline
+		\vec{a} = \vec{0} \Rightarrow \vec{v} = \overrightarrow{const} \Rightarrow \vec{r}(t) = \vec{r}_0 + \vec{v} \cdotp t
+		\newline
+		\text{Dla ruchu wzdłuż osi x (opis skalarny):}
+		\newline
+		x(t) = x_0 + v \cdotp t
+		$
+		
+		\item \textbf{Ruch zmienny wzdłuż prostej} $ \newline
+		\vec{a} = \overrightarrow{const} \Rightarrow \vec{v}(t) = \vec{v}_0 + \vec{a} \cdotp t \Rightarrow \vec{r}(t) = \vec{r}_0 + \vec{v}_0 \cdotp t + \frac{\vec{a} \cdotp t^2}{2}
+		\newline
+		\text{Opis skalarny:}
+		\newline
+		v(t) = \pm v_0 \pm a \cdotp t \Rightarrow x(t) = x_0 \pm v_0 \cdotp t \pm \frac{a \cdotp t^2}{2}
+		$
+		
+		\item \textbf{I zasada dynamiki Newtona} $ \newline
+		\vec{F}_w = \vec{0} \Leftrightarrow \vec{v} = \overrightarrow{const}
+		$
+		
+		\item \textbf{II zasada dynamiki Newtona} $ \newline
+		\vec{a} = \frac{\vec{F}_w}{m}
+		$
+		
+		\item \textbf{Pęd} $ \newline
+		\vec{p} = m \cdotp \vec{v}
+		$
+		
+		\item \textbf{II zasada dynamiki w postaci pędowej} $ \newline
+		\vec{F} \cdotp \Delta t = \Delta \vec{p} \text{ lub } \vec{F} \cdotp dt = d \vec{p}
+		\newline
+		\vec{F} = \frac{\Delta \vec{p}}{\Delta t} \text{ lub } \vec{F} = \frac{d \vec{p}}{dt}
+		\newline
+		\text{Dla stałej masy:}
+		\newline
+		m = const
+		\newline
+		\vec{F} = \frac{d \vec{p}}{dt} = \frac{d(m \cdotp \vec{v})}{dt} = m \cdotp \frac{d \vec{v}}{dt} = m \cdotp \vec{a}
+		$
+		
+		\item \textbf{Równanie ruchy} $ \newline
+		\vec{F} = m \cdotp \vec{a}
+		$
+		
+		\item \textbf{III zasada dynamiki Newtona} $ \newline
+		\vec{F}_{A \rightarrow B} = -\vec{F}_{B \rightarrow A}
+		$
+		
+	\end{enumerate}
+	
+\end{document}
