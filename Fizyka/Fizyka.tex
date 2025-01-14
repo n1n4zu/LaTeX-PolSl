@@ -340,6 +340,52 @@
 		\[
 		\vec{F} = -k \cdot \vec{x}
 		\]
+		\item \textbf{Środek masy układu ciał}:
+		\[
+		x_s = \frac{\sum\limits_{i = 1}^N m_ix_i}{\sum\limits_{i = 1}^N m_i},
+		y_s = \frac{\sum\limits_{i = 1}^N m_iy_i}{\sum\limits_{i = 1}^N m_i},
+		z_s = \frac{\sum\limits_{i = 1}^N m_iz_i}{\sum\limits_{i = 1}^N m_i}
+		\]
+		\[
+		\Downarrow
+		\]
+		\[
+		\vec{r}_s = \frac{\sum\limits_{i = 1}^N m_i \vec{r}_i}{\sum\limits_{i = 1}^N m_i}
+		\]
+		\[
+		\vec{r}_s = \frac{\sum\limits_{i = 1}^N m_i \vec{r}_i}{\sum\limits_{i = 1}^N m_i}
+		\overset{\Delta m_i \rightarrow 0}{\Rightarrow}
+		 \vec{r}_s = \frac{\int rdm}{\int dm} =
+		\frac{1}{m} \int rdm
+		\]
+		\[
+		mx_s = \sum\limits_{i = 1}^N m_i x_i
+		\]
+		\text{Pierwsze różniczkowanie}
+		\[
+		m \frac{dx_s}{dt} = \sum\limits_{i = 1}^N m_i \frac{dx_i}{dt},
+		mv_{sx} = \sum\limits_{i = 1}^N m_i v_{xi}
+		\]
+		\text{Drugie różniczkowanie}
+		\[
+		m \frac{dv_{sx}}{dt} = ma_{sx} = \sum\limits_{i = 1}^N m_i a_{xi}
+		\]
+		\text{Po uwzględnieniu II zasady dynamiki}
+		\[
+		ma_{sx} = \sum\limits_{i = 1}^N m_i a_{xi} = \sum\limits_{i = 1}^N F_{xi}
+		\]
+		\[
+		\text{Analogicznie robimy dla osi y i z}
+		\]
+		\[
+		\Downarrow
+		\]
+		\[
+		m \overrightarrow{a_s} = \sum\limits_{i = 1}^N \vec{F}_i
+		\]
+		\[
+		m \vec{a}_s = \sum\vec{F}_{zi} \longrightarrow \text{Równanie ruchu}
+		\]
 		
 	\end{enumerate}
 	
