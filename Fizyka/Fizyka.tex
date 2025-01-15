@@ -191,20 +191,35 @@
 		\]
 		
 		\item \textbf{Energia}:
+		\text{Energia kinetyczna}
 		\[
-		E_k = \frac{mv^2}{2} \longrightarrow \text{Energia kinetyczna}
+		E_k = \frac{mv^2}{2}
+		\]
+		\text{Energia potencjalna}
+		\[
+		E_p = -G \frac{Mm}{r}
+		\]
+		\text{W pobliżu pow. Ziemi}
+		\[
+		E_p = mgh
+		\]
+		\text{Siła elektrostatyczna (Coulomba)}
+		\[
+		E_p = \frac{1}{4 \pi \varepsilon_0} \frac{q_1 q_2}{r}
+		\]
+		\text{Siła sprężystości}
+		\[
+		E_p = \frac{kx^2}{w}
+		\]
+		\text{Energia kinetyczna ruchu obrotowego}
+		\[
+		E_{koi} = \frac{m_i v_i^2}{2} = \frac{m_i r_i^2 \omega^2}{2}
 		\]
 		\[
-		E_p = -G \frac{Mm}{r} \longrightarrow \text{Energia potencjalna}
+		E_{ko} = \sum\limits_{i = 1}^n \frac{m_i r_i^2 \omega^2}{2} = \frac{1}{2} \omega^2 \sum\limits_{i = 1}^n m_i r_i^2
 		\]
 		\[
-		E_p = mgh \longrightarrow \text{W pobliżu pow. Ziemi}
-		\]
-		\[
-		E_p = \frac{1}{4 \pi \varepsilon_0} \frac{q_1 q_2}{r} \longrightarrow \text{Siła elektrostatyczna (Coulomba)}
-		\]
-		\[
-		E_p = \frac{kx^2}{w} \longrightarrow \text{Siła sprężystości}
+		E_{ko} = \frac{I \omega^2}{2}
 		\]
 		\item \textbf{Praca}:
 		\[
@@ -411,6 +426,96 @@
 		\]
 		\[
 		\vec{a}_n = \vec{\omega} \times \frac{d \vec{r}}{dt} = \vec{\omega} \times \vec{v} \Rightarrow | \vec{a}_n | = \frac{v^2}{r}
+		\]
+		\item \textbf{Moment siły}:
+		\[
+		\vec{M} = \vec{r} \times \vec{F}, \vec{r} \longrightarrow \text{ramię siły}
+		\]
+		\[
+		\vec{r} \text{ II } \vec{F} \Rightarrow \vec{M} = 0		
+		\]
+		\[
+		M = rF\sin\alpha = r_{\perp} \cdot F
+		\]
+		\item \textbf{Moment bezwładności}:
+		\[
+		I = \sum\limits_{i = 1}^n \Delta m_i \cdot r^2_i
+		\]
+		\[
+		I = \lim\limits_{n \rightarrow \infty} \sum\limits_{i = 1}^n \Delta m_i \cdot r_i = \int r^2 dm
+		\]
+		\text{Twierdzenie Steinera}
+		\[
+		I = I_0 + md^2
+		\]
+		\text{II zasada dynamiki dla ruchu obrotowego}
+		\[
+		\vec{M} = \sum\limits_{i = 1}^n \vec{r_i} \times \vec{F_i}
+		\]
+		\[
+		F_i = \Delta m_i a_i = \Delta m_i \varepsilon r_i
+		\]
+		\[
+		M = \sum\limits_{i = 1}^n r_i F_i = \sum\limits_{i = 1}^n \Delta m_i \varepsilon r_i^2 = \varepsilon \sum\limits_{i = 1}^n m_i r_i^2
+		\]
+		\[
+		M = I \cdot \varepsilon
+		\]
+		\[
+		\vec{M} = I \cdot \vec{\varepsilon}
+		\]
+		\item \textbf{Moment pędu}:
+		\[
+		\vec{L_i} = \vec{r_i} \times \vec{p_i} = \vec{r_i} \times \Delta m_i \cdot \vec{v_i}
+		\]
+		\[
+		\vec{L_i} = \Delta m_i \vec{r_i} \times (\vec{\omega} \times \vec{r_i})
+		\]
+		\[
+		\vec{\omega} = \vec{\omega_{\perp}} + \vec{\omega_{\parallel}}
+		\]
+		\[
+		\text{Dla całej bryły: }
+		L = \sum\limits_{i = 1}^n r_i \Delta m_i v_i
+		\]
+		\[
+		v = \omega \cdot r
+		\]
+		\[
+		L = \sum\limits_{i = 1}^n r_i \Delta m_i \omega r_i = \omega \sum\limits_{i = 1}^n \Delta m_i r_i^2 = I \omega
+		\]
+		\[
+		\vec{L} = I \vec{\omega}
+		\]
+		\[
+		\vec{L} = \L\vec{L_{\perp}} + \vec{L_{\parallel}} = I_{\perp} \vec{\omega_{\perp}} + I_{\parallel} \vec{\omega_{\parallel}}
+		\]
+		\[
+		I_{\perp} = mr^2, I_{\parallel} = \frac{1}{2} mr^2
+		\]
+		\text{II zasada dynamiki dla ruchu obrotowego}
+		\[
+		\vec{M} = I \vec{\varepsilon} = I \cdot \frac{d \vec{\omega}}{dt} = \frac{d(I \cdot \vec{\omega})}{dt}
+		\]
+		\[
+		\vec{M} = \frac{d \vec{L}}{dt}
+		\]
+		\text{Zasada zachowania pędu}
+		\[
+		\vec{M} = \frac{d \vec{L}}{dt} \text{ jeżeli } \vec{M} = \vec{0} \Rightarrow \vec{L} = \overrightarrow{const}
+		\]
+		\[
+		L = L' \text{ tzn. } I \omega = I' \omega '
+		\]
+		\[
+		I > I' \Rightarrow \omega ' > \omega
+		\]
+		\text{Elipsoida bezwładności bryły sztywnej względem jej środka masy}
+		\[
+		\frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} = 1
+		\]
+		\[
+		a = \frac{1}{\sqrt{I_x}}, b = \frac{1}{\sqrt{I_y}}, c = \frac{1}{\sqrt{I_z}}
 		\]
 		
 	\end{enumerate}
