@@ -1,4 +1,5 @@
 \documentclass{article}
+
 \usepackage[top=10px]{geometry}
 \usepackage{graphicx}
 \usepackage{amsmath,amssymb}
@@ -6,6 +7,8 @@
 \usepackage[T1]{fontenc}
 \usepackage[polish]{babel}
 \usepackage[fontsize=16pt]{scrextend}
+\usepackage{enumitem}
+\setlist[enumerate,2]{label=\arabic{enumi}.\arabic*}
 
 \author{}
 \title{Fizyka - Wzory}
@@ -55,10 +58,12 @@
 			\[
 			\vec{a} = \vec{0} \implies \vec{v} = \overrightarrow{const} \implies \vec{r}(t) = \vec{r}_0 + \vec{v} \cdot t
 			\]
-			\text{Dla ruchu wzdłuż osi \(x\)}
-			\[
-			x(t) = x_0 + v \cdot t
-			\]
+			\begin{enumerate}
+				\item Dla ruchu wzdłuż osi \(x\)
+				\[
+				x(t) = x_0 + v \cdot t
+				\]
+		\end{enumerate}
 		
 		\item \textbf{Ruch zmienny wzdłuż prostej}:
 		\[
@@ -192,36 +197,39 @@
 		\]
 		
 		\item \textbf{Energia}:
-		\text{Energia kinetyczna}
-		\[
-		E_k = \frac{mv^2}{2}
-		\]
-		\text{Energia potencjalna}
-		\[
-		E_p = -G \frac{Mm}{r}
-		\]
-		\text{W pobliżu pow. Ziemi}
-		\[
-		E_p = mgh
-		\]
-		\text{Siła elektrostatyczna (Coulomba)}
-		\[
-		E_p = \frac{1}{4 \pi \varepsilon_0} \frac{q_1 q_2}{r}
-		\]
-		\text{Siła sprężystości}
-		\[
-		E_p = \frac{kx^2}{w}
-		\]
-		\text{Energia kinetyczna ruchu obrotowego}
-		\[
-		E_{koi} = \frac{m_i v_i^2}{2} = \frac{m_i r_i^2 \omega^2}{2}
-		\]
-		\[
-		E_{ko} = \sum\limits_{i = 1}^n \frac{m_i r_i^2 \omega^2}{2} = \frac{1}{2} \omega^2 \sum\limits_{i = 1}^n m_i r_i^2
-		\]
-		\[
-		E_{ko} = \frac{I \omega^2}{2}
-		\]
+		\begin{enumerate}
+			\item Energia kinetyczna
+			\[
+			E_k = \frac{mv^2}{2}
+			\]
+			\item Energia potencjalna
+			\[
+			E_p = -G \frac{Mm}{r}
+			\]
+			\item W pobliżu pow. Ziemi
+			\[
+			E_p = mgh
+			\]
+			\item Siła elektrostatyczna (Coulomba)
+			\[
+			E_p = \frac{1}{4 \pi \varepsilon_0} \frac{q_1 q_2}{r}
+			\]
+			\item Siła sprężystości
+			\[
+			E_p = \frac{kx^2}{w}
+			\]
+			\item Energia kinetyczna ruchu obrotowego
+			\[
+			E_{koi} = \frac{m_i v_i^2}{2} = \frac{m_i r_i^2 \omega^2}{2}
+			\]
+			\[
+			E_{ko} = \sum\limits_{i = 1}^n \frac{m_i r_i^2 \omega^2}{2} = \frac{1}{2} \omega^2 \sum\limits_{i = 1}^n m_i r_i^2
+			\]
+			\[
+			E_{ko} = \frac{I \omega^2}{2}
+			\]
+		\end{enumerate}
+		
 		\item \textbf{Praca}:
 		\[
 		W = \vec{F} \circ \vec{s} = F \cdot s \cdot \cos a
@@ -247,9 +255,10 @@
 		\[
 		W = F \cdot x = m \cdot a \cdot x = m \left( \frac{v - v_0}{t} \right) \left( \frac{v + v_0}{2} \right)t = \frac{mv^2}{2} - \frac{mv_0^2}{2}
 		\]
-		\[
+		$
 		W = E_k - E_{k_0} \longrightarrow \text{Równoważność pracy i energii}
-		\]
+		$
+		
 		\item \textbf{Moc}:
 		\[
 		P_{śr} = \frac{\Delta W}{\Delta t}
@@ -260,6 +269,7 @@
 		\[
 		P = \frac{dW}{dt} = \frac{\vec{F} \circ d \vec{s}}{dt} = \vec{F} \circ \vec{v}
 		\]
+		
 		\item \textbf{Tarcie}:
 		\[
 		T_k = \mu_k \cdot N
@@ -277,7 +287,7 @@
 		T_{\text{smax}} = \mu_s \cdot N
 		\]
 		
-		\text{Dla małych prędkości obiektu (wzór Stokesa):}
+		Dla małych prędkości obiektu (wzór Stokesa):
 		$
 		\\
 		F = 6 \pi \eta r v \longrightarrow \text{Siła oporu kuli o promieniu } r \\
@@ -313,44 +323,43 @@
 		\[
 		\overrightarrow{F_c} = -2m(\vec{\omega} \times \vec{v}) \longrightarrow \text{Siła Coriolisa}
 		\]
-		\text{Oddziaływanie grawitacyjne:}
-		\[
-		\text{Wzór Newtowna}
-		\]
-		\[
-		F = G \frac{m \cdot M}{r^2}, G = 6.67 \cdot 10^{-11} \text{N} \cdot \text{m}^2 / \text{kg}^2
-		\]
-		$
-			\text{Wzór uwzględniający informację o zwrocie i kierunku siły w miejscu} 	\newline 
-			\text{wskazanym przez wektor } \vec{r}
-		$
-		\[
-		\vec{F} = G \frac{m \cdot M}{r^3} \vec{r}
-		\]
-		\[
-		\text{Siła grawitacji na powierzchni Ziemi}
-		\]
-		\[
-		F = mg, g = 9.81 \text{m} / \text{s}^2 
-		\]
-		\text{Oddziaływanie elektromagnetyczne}
-		\[
-		F_c = \frac{1}{4 \pi \varepsilon_0} \cdot \frac{q_1 q_2}{r^2} \longrightarrow \text{prawo Coulomba}
-		\]
-		\[
-		\overrightarrow{F_L} =  q(\vec{v} \times \vec{B}) \longrightarrow \text{siła Lorentza}
-		\]
-		\text{Siła wyporu}
-		\[
-		\overrightarrow{F_w} = -\rho V \vec{g}
-		\]
-		\text{Siła sprężystości}
-		\[
-		F = E \cdot \frac{S}{L_0} \cdot \Delta L
-		\]
-		\[
-		\vec{F} = -k \cdot \vec{x}
-		\]
+		\begin{enumerate}
+			\item Oddziaływanie grawitacyjne:
+			\[
+			\text{Wzór Newtowna}
+			\]
+			\[
+			F = G \frac{m \cdot M}{r^2}, G = 6.67 \cdot 10^{-11} \text{N} \cdot \text{m}^2 / \text{kg}^2
+			\]
+			\item Wzór uwzględniający informację o zwrocie i kierunku siły w miejscu 	\\
+			wskazanym przez wektor $\vec{r}$
+			\[
+			\vec{F} = G \frac{m \cdot M}{r^3} \vec{r}
+			\]
+			\item Siła grawitacji na powierzchni Ziemi
+			\[
+			F = mg, g = 9.81 \text{m} / \text{s}^2 
+			\]
+			\item Oddziaływanie elektromagnetyczne
+			\[
+			F_c = \frac{1}{4 \pi \varepsilon_0} \cdot \frac{q_1 q_2}{r^2} \longrightarrow \text{prawo Coulomba}
+			\]
+			\[
+			\overrightarrow{F_L} =  q(\vec{v} \times \vec{B}) \longrightarrow \text{siła Lorentza}
+			\]
+			\item Siła wyporu
+			\[
+			\overrightarrow{F_w} = -\rho V \vec{g}
+			\]
+			\item Siła sprężystości
+			\[
+			F = E \cdot \frac{S}{L_0} \cdot \Delta L
+			\]
+			\[
+			\vec{F} = -k \cdot \vec{x}
+			\]
+		\end{enumerate}
+			
 		\item \textbf{Środek masy układu ciał}:
 		\[
 		x_s = \frac{\sum\limits_{i = 1}^N m_ix_i}{\sum\limits_{i = 1}^N m_i},
@@ -372,31 +381,35 @@
 		\[
 		mx_s = \sum\limits_{i = 1}^N m_i x_i
 		\]
-		\text{Pierwsze różniczkowanie}
-		\[
-		m \frac{dx_s}{dt} = \sum\limits_{i = 1}^N m_i \frac{dx_i}{dt},
-		mv_{sx} = \sum\limits_{i = 1}^N m_i v_{xi}
-		\]
-		\text{Drugie różniczkowanie}
-		\[
-		m \frac{dv_{sx}}{dt} = ma_{sx} = \sum\limits_{i = 1}^N m_i a_{xi}
-		\]
-		\text{Po uwzględnieniu II zasady dynamiki}
-		\[
-		ma_{sx} = \sum\limits_{i = 1}^N m_i a_{xi} = \sum\limits_{i = 1}^N F_{xi}
-		\]
-		\[
-		\text{Analogicznie robimy dla osi y i z}
-		\]
-		\[
-		\Downarrow
-		\]
-		\[
-		m \overrightarrow{a_s} = \sum\limits_{i = 1}^N \vec{F}_i
-		\]
-		\[
-		m \vec{a}_s = \sum\vec{F}_{zi} \longrightarrow \text{Równanie ruchu}
-		\]
+		\begin{enumerate}
+			\item Pierwsze różniczkowanie
+			\[
+			m \frac{dx_s}{dt} = \sum\limits_{i = 1}^N m_i \frac{dx_i}{dt},
+			mv_{sx} = \sum\limits_{i = 1}^N m_i v_{xi}
+			\]
+			\item Drugie różniczkowanie
+			\[
+			m \frac{dv_{sx}}{dt} = ma_{sx} = \sum\limits_{i = 1}^N m_i a_{xi}
+			\]
+			\item \text{Po uwzględnieniu II zasady dynamiki}
+			\[
+			ma_{sx} = \sum\limits_{i = 1}^N m_i a_{xi} = \sum\limits_{i = 1}^N F_{xi}
+			\]
+			\[
+			\text{Analogicznie robimy dla osi y i z}
+			\]
+			\[
+			\Downarrow
+			\]
+			\[
+			m \overrightarrow{a_s} = \sum\limits_{i = 1}^N \vec{F}_i
+			\]
+			\[
+			m \vec{a}_s = \sum\vec{F}_{zi} \longrightarrow \text{Równanie ruchu}
+			\]
+		\end{enumerate}
+		
+		
 		\item \textbf{Ruch obrotowy punktu materialnego}:
 		\[
 		s = \Delta\phi \cdot r \longrightarrow \text{droga kątowa}
@@ -412,17 +425,20 @@
 		\[
 		\vec{\varepsilon} = \frac{d \vec{\omega}}{dt} \longrightarrow \text{przyspieszenie kątowe}
 		\]
-		\text{Przyspieszenie styczne i dośrodkowe}
-		\[
-		\vec{a} = \frac{d \vec{v}}{dt} = \frac{d}{dt} (\vec{\omega} \times \vec{r}) =
-		\frac{d \vec{\omega}}{dt} \times \vec{r} + \vec{\omega} \times \frac{d \vec{r}}{dt}
-		\]
-		\[
-		\vec{a}_s = \frac{d \vec{\omega}}{dt} \times \vec{r} = \vec{\varepsilon} \times \vec{r} \Rightarrow | \vec{a}_s | = \left| \frac{d \vec{v}}{dt} \right|
-		\]
-		\[
-		\vec{a}_n = \vec{\omega} \times \frac{d \vec{r}}{dt} = \vec{\omega} \times \vec{v} \Rightarrow | \vec{a}_n | = \frac{v^2}{r}
-		\]
+		\begin{enumerate}
+			\item Przyspieszenie styczne i dośrodkowe
+			\[
+			\vec{a} = \frac{d \vec{v}}{dt} = \frac{d}{dt} (\vec{\omega} \times \vec{r}) =
+			\frac{d \vec{\omega}}{dt} \times \vec{r} + \vec{\omega} \times \frac{d \vec{r}}{dt}
+			\]
+			\[
+			\vec{a}_s = \frac{d \vec{\omega}}{dt} \times \vec{r} = \vec{\varepsilon} \times \vec{r} \Rightarrow | \vec{a}_s | = \left| \frac{d \vec{v}}{dt} \right|
+			\]
+			\[
+			\vec{a}_n = \vec{\omega} \times \frac{d \vec{r}}{dt} = \vec{\omega} \times \vec{v} \Rightarrow | \vec{a}_n | = \frac{v^2}{r}
+			\]
+		\end{enumerate}
+		
 		\item \textbf{Moment siły}:
 		\[
 		\vec{M} = \vec{r} \times \vec{F}, \vec{r} \longrightarrow \text{ramię siły}
@@ -433,6 +449,7 @@
 		\[
 		M = rF\sin\alpha = r_{\perp} \cdot F
 		\]
+		
 		\item \textbf{Moment bezwładności}:
 		\[
 		I = \sum\limits_{i = 1}^n \Delta m_i \cdot r^2_i
@@ -440,26 +457,29 @@
 		\[
 		I = \lim\limits_{n \rightarrow \infty} \sum\limits_{i = 1}^n \Delta m_i \cdot r_i = \int r^2 dm
 		\]
-		\text{Twierdzenie Steinera}
-		\[
-		I = I_0 + md^2
-		\]
-		\text{II zasada dynamiki dla ruchu obrotowego}
-		\[
-		\vec{M} = \sum\limits_{i = 1}^n \vec{r_i} \times \vec{F_i}
-		\]
-		\[
-		F_i = \Delta m_i a_i = \Delta m_i \varepsilon r_i
-		\]
-		\[
-		M = \sum\limits_{i = 1}^n r_i F_i = \sum\limits_{i = 1}^n \Delta m_i \varepsilon r_i^2 = \varepsilon \sum\limits_{i = 1}^n m_i r_i^2
-		\]
-		\[
-		M = I \cdot \varepsilon
-		\]
-		\[
-		\vec{M} = I \cdot \vec{\varepsilon}
-		\]
+		\begin{enumerate}
+			\item Twierdzenie Steinera
+			\[
+			I = I_0 + md^2
+			\]
+			\item II zasada dynamiki dla ruchu obrotowego
+			\[
+			\vec{M} = \sum\limits_{i = 1}^n \vec{r_i} \times \vec{F_i}
+			\]
+			\[
+			F_i = \Delta m_i a_i = \Delta m_i \varepsilon r_i
+			\]
+			\[
+			M = \sum\limits_{i = 1}^n r_i F_i = \sum\limits_{i = 1}^n \Delta m_i \varepsilon r_i^2 = \varepsilon \sum\limits_{i = 1}^n m_i r_i^2
+			\]
+			\[
+			M = I \cdot \varepsilon
+			\]
+			\[
+			\vec{M} = I \cdot \vec{\varepsilon}
+			\]
+		\end{enumerate}
+		
 		\item \textbf{Moment pędu}:
 		\[
 		\vec{L_i} = \vec{r_i} \times \vec{p_i} = \vec{r_i} \times \Delta m_i \cdot \vec{v_i}
@@ -489,37 +509,40 @@
 		\[
 		I_{\perp} = mr^2, I_{\parallel} = \frac{1}{2} mr^2
 		\]
-		\text{II zasada dynamiki dla ruchu obrotowego}
-		\[
-		\vec{M} = I \vec{\varepsilon} = I \cdot \frac{d \vec{\omega}}{dt} = \frac{d(I \cdot \vec{\omega})}{dt}
-		\]
-		\[
-		\vec{M} = \frac{d \vec{L}}{dt}
-		\]
-		\text{Zasada zachowania pędu}
-		\[
-		\vec{M} = \frac{d \vec{L}}{dt} \text{ jeżeli } \vec{M} = \vec{0} \Rightarrow \vec{L} = \overrightarrow{const}
-		\]
-		\[
-		L = L' \text{ tzn. } I \omega = I' \omega '
-		\]
-		\[
-		I > I' \Rightarrow \omega ' > \omega
-		\]
-		\text{Elipsoida bezwładności bryły sztywnej względem jej środka masy}
-		\[
-		\frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} = 1
-		\]
-		\[
-		a = \frac{1}{\sqrt{I_x}}, b = \frac{1}{\sqrt{I_y}}, c = \frac{1}{\sqrt{I_z}}
-		\]
+		\begin{enumerate}
+			\item II zasada dynamiki dla ruchu obrotowego
+			\[
+			\vec{M} = I \vec{\varepsilon} = I \cdot \frac{d \vec{\omega}}{dt} = \frac{d(I \cdot \vec{\omega})}{dt}
+			\]
+			\[
+			\vec{M} = \frac{d \vec{L}}{dt}
+			\]
+			\item Zasada zachowania pędu
+			\[
+			\vec{M} = \frac{d \vec{L}}{dt} \text{ jeżeli } \vec{M} = \vec{0} \Rightarrow \vec{L} = \overrightarrow{const}
+			\]
+			\[
+			L = L' \text{ tzn. } I \omega = I' \omega '
+			\]
+			\[
+			I > I' \Rightarrow \omega ' > \omega
+			\]
+			\item Elipsoida bezwładności bryły sztywnej względem jej środka masy
+			\[
+			\frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{z^2}{c^2} = 1
+			\]
+			\[
+			a = \frac{1}{\sqrt{I_x}}, b = \frac{1}{\sqrt{I_y}}, c = \frac{1}{\sqrt{I_z}}
+			\]
+		\end{enumerate}
+		
 		\item \textbf{Precesja bąka}:
 		\[
 		| \vec{M} | = | \vec{r} \times m \vec{g} | = rmg \sin \alpha
 		\]
-		\[
+		$
 		r \longrightarrow \text{wektor położenia środka masy przy zetknięciu z podłożem}
-		\]
+		$
 		\[
 		d \vec{L} = \vec{M} dt
 		\]
@@ -532,6 +555,7 @@
 		\[
 		\vec{M} = \vec{\omega_p} \times \vec{L}
 		\]
+		
 		\item \textbf{Drgania harmoniczne}:
 		\[
 		m = \frac{d^2x}{dt^2} = -kx
@@ -539,235 +563,236 @@
 		\[
 		x(t) = A \sin (\omega_0t + \varPhi)
 		\]
-		\text{A - amplituda, k - współczynnik sprężystości, $\omega_0$ - częstość}
-		\text{kołowa drgań, $\varPhi$ - początkowa faza drgań}
-		\newline
-		\text{Prędkość oscylatora harmonicznego}
-		\[
-		v(t) = \frac{dx}{dt} A \cdot \omega_0 \cdot \cos(\omega_0 \cdot t + \varPhi)
-		\]
-		\text{Przyspieszenie oscylatora harmonicznego}
-		\[
-		a(t) = \frac{d^2 x}{dt^2} = -A \cdot \omega_0^2 \cdot \sin(\omega_0 \cdot t + \varPhi)
-		\]
-		\[
-		a(t) = \frac{d^2x}{dt^2} = -\omega_0^2 \cdot x(t)
-		\]
-		\[
-		\frac{d^2 x}{dt^2} = - \frac{k}{m} \cdot x(t) = - \omega^2_0 \cdot x(t) \Rightarrow \frac{k}{m} = \omega_0^2
-		\]
-		\text{Wychylenie}
-		\[
-		x(t) = A \cdot \sin \left(\sqrt{\frac{k}{m}} \cdot t + \varPhi \right)
-		\]
-		\text{Okres drgań własnych}
-		\[
-		T = \frac{2 \pi}{\omega} \Longrightarrow T_0 = \frac{2 \pi}{\omega} = 2 \pi \sqrt{\frac{m}{k}}
-		\]
-		\text{Częstotliwość}
-		\[
-		f = \frac{1}{T}
-		\]
-		\text{Energia potencjalna sprężystości}
-		\[
-		W = \vec{F} \circ \vec{x} = Fx \cdot \cos \alpha
-		\]
-		\[
-		\Delta W = F \cdot \Delta x
-		\]
-		\[
-		W = \lim\limits_{\Delta x \rightarrow 0} \sum\limits_{x_1}^{x_2} F \Delta x = \int\limits_{x_1}^{x_2} Fdx
-		\]
-		\[
-		W = \int\limits_0^x F \cdot dx = \int_0^x (k \cdot x) \cdot dx = \left. \frac{k \cdot x^2}{2} \right|_0^2 = \frac{k \cdot x^2}{2}
-		\]
-		\[
-		W = \Delta E \Rightarrow E_p = \frac{k \cdot x^2}{2}
-		\]
-		\text{Energia kinetyczna}
-		\[
-		E_k = \frac{m \cdot v^2}{2} = \frac{m}{2} \cdot \left( \frac{dx}{dt} \right)^2 = \frac{m}{2} \cdot (A \cdot \omega_0 \cdot \cos(\omega_0 \cdot t + \varPhi))^2 
-		\]
-		\[
-		\Downarrow
-		\]
-		\[
-		E_k = \frac{m \cdot \omega_0^2 \cdot A^2}{2} \cdot \cos^2(\omega_0 \cdot t + \varPhi)
-		\]
-		\newpage
-		\text{Energia całkowita}
-		\[
-		E_c = E_p + E_k = \frac{k \cdot x^2}{2} + \frac{m \cdot \omega_0^2 \cdot A^2}{2} \cdot \cos^2(\omega_0 \cdot t + \varPhi) =
-		\]
-		\[
-		= \frac{k \cdot A^2}{2} \cdot \sin^2(\omega_0 \cdot t + \varPhi) + \frac{k \cdot A^2}{2} \cdot \cos^2(\omega_0 \cdot t + \varPhi) \Rightarrow E_c = \frac{k \cdot A^2}{w}
-		\]
-		\text{Siła ciężkości}
-		\[
-		F_s = m \cdot g \cdot \sin \varTheta \longrightarrow \text{Składowa styczna siły ciężkości}
-		\]
-		\[
-		F_r = m \cdot g \cdot \cos \varTheta \longrightarrow \text{Składowa radialna siły ciężkości}
-		\]
-		\text{Dla małych kątów (<10\textdegree) sin$\Theta \approx \Theta$}
-		\[
-		\sin \varTheta = \frac{x}{l} \Longrightarrow \varTheta = \frac{x}{l}
-		\]
-		\[
-		F_s = -mg\varTheta = -mg \frac{x}{l} = - \frac{mg}{l}x
-		\]
-		\[
-		x = \frac{mg}{l} = m \omega_0^2 \Rightarrow \frac{g}{l} = \left( \frac{2 \pi}{T_0} \right)^2 \Rightarrow T_0 = 2 \pi \sqrt{\frac{l}{g}}
-		\]
 		
-		\renewcommand{\arraystretch}{1.5}
+		A - amplituda, k - współczynnik sprężystości, $\omega_0$ - częstość
+		kołowa drgań, $\varPhi$ - początkowa faza drgań
+		\begin{enumerate}
+			\item Prędkość oscylatora harmonicznego
+			\[
+			v(t) = \frac{dx}{dt} A \cdot \omega_0 \cdot \cos(\omega_0 \cdot t + \varPhi)
+			\]
+			\item Przyspieszenie oscylatora harmonicznego
+			\[
+			a(t) = \frac{d^2 x}{dt^2} = -A \cdot \omega_0^2 \cdot \sin(\omega_0 \cdot t + \varPhi)
+			\]
+			\[
+			a(t) = \frac{d^2x}{dt^2} = -\omega_0^2 \cdot x(t)
+			\]
+			\[
+			\frac{d^2 x}{dt^2} = - \frac{k}{m} \cdot x(t) = - \omega^2_0 \cdot x(t) \Rightarrow \frac{k}{m} = \omega_0^2
+			\]
+			\item Wychylenie
+			\[
+			x(t) = A \cdot \sin \left(\sqrt{\frac{k}{m}} \cdot t + \varPhi \right)
+			\]
+			\item Okres drgań własnych
+			\[
+			T = \frac{2 \pi}{\omega} \Longrightarrow T_0 = \frac{2 \pi}{\omega} = 2 \pi \sqrt{\frac{m}{k}}
+			\]
+			\item Częstotliwość
+			\[
+			f = \frac{1}{T}
+			\]
+			\item Energia potencjalna sprężystości
+			\[
+			W = \vec{F} \circ \vec{x} = Fx \cdot \cos \alpha
+			\]
+			\[
+			\Delta W = F \cdot \Delta x
+			\]
+			\[
+			W = \lim\limits_{\Delta x \rightarrow 0} \sum\limits_{x_1}^{x_2} F \Delta x = \int\limits_{x_1}^{x_2} Fdx
+			\]
+			\[
+			W = \int\limits_0^x F \cdot dx = \int_0^x (k \cdot x) \cdot dx = \left. \frac{k \cdot x^2}{2} \right|_0^2 = \frac{k \cdot x^2}{2}
+			\]
+			\[
+			W = \Delta E \Rightarrow E_p = \frac{k \cdot x^2}{2}
+			\]
+			\item Energia kinetyczna
+			\[
+			E_k = \frac{m \cdot v^2}{2} = \frac{m}{2} \cdot \left( \frac{dx}{dt} \right)^2 = \frac{m}{2} \cdot (A \cdot \omega_0 \cdot \cos(\omega_0 \cdot t + \varPhi))^2 
+			\]
+			\[
+			\Downarrow
+			\]
+			\[
+			E_k = \frac{m \cdot \omega_0^2 \cdot A^2}{2} \cdot \cos^2(\omega_0 \cdot t + \varPhi)
+			\]
+			%\newpage
+			\item Energia całkowita
+			\[
+			E_c = E_p + E_k = \frac{k \cdot x^2}{2} + \frac{m \cdot \omega_0^2 \cdot A^2}{2} \cdot \cos^2(\omega_0 \cdot t + \varPhi) =
+			\]
+			\[
+			= \frac{k \cdot A^2}{2} \cdot \sin^2(\omega_0 \cdot t + \varPhi) + \frac{k \cdot A^2}{2} \cdot \cos^2(\omega_0 \cdot t + \varPhi) \Rightarrow E_c = \frac{k \cdot A^2}{w}
+			\]
+			\item Siła ciężkości
+			\[
+			F_s = m \cdot g \cdot \sin \varTheta \longrightarrow \text{Składowa styczna siły ciężkości}
+			\]
+			\[
+			F_r = m \cdot g \cdot \cos \varTheta \longrightarrow \text{Składowa radialna siły ciężkości}
+			\]
+			Dla małych kątów (<10\textdegree) sin$\Theta \approx \Theta$
+			\[
+			\sin \varTheta = \frac{x}{l} \Longrightarrow \varTheta = \frac{x}{l}
+			\]
+			\[
+			F_s = -mg\varTheta = -mg \frac{x}{l} = - \frac{mg}{l}x
+			\]
+			\[
+			x = \frac{mg}{l} = m \omega_0^2 \Rightarrow \frac{g}{l} = \left( \frac{2 \pi}{T_0} \right)^2 \Rightarrow T_0 = 2 \pi \sqrt{\frac{l}{g}}
+			\]
+			\renewcommand{\arraystretch}{1.5}
+			\begin{table}[h]
+				\centering
+				\caption{Drgania harmoniczne - wahadło fizyczne}
+				\label{tab:Drgania harmoniczne - wahadło fizyczne}
+				\begin{tabular}{|c|c|}
+					\hline
+					\textbf{Punkt materialny} & \textbf{Bryła sztywna} \\
+					\hline
+					$F = -kx$ & $M -K\alpha$  \\
+					\hline
+					$F = ma$ & $M = I \varepsilon$ \\
+					\hline
+					$k = m \omega_0^2$ & $K = I \omega_0^2$ \\
+					\hline
+					$\omega_0 = \sqrt{\frac{k}{m}}$ & $\omega_0 = \sqrt{\frac{K}{I}}$ \\
+					\hline
+				\end{tabular}
+			\end{table}
+			\[
+			M = F_sl = -mgl \sin \alpha \approx -mgl \alpha
+			\]
+			\[
+			K = mgl
+			\]
+			\[
+			\omega_0 = \sqrt{\frac{K}{I}}
+			\]
+			\[
+			T_0 = \frac{2 \pi}{\omega_0} = 2 \pi \sqrt{\frac{I}{K}} \Rightarrow T_0 = 2 \pi \sqrt{\frac{I}{mgl}}
+			\]
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=1\textwidth]{krzywe_Lissajous.png}
+				\caption{Krzywe Lissajous}
+				\label{fig:krzywe_Lissajous}
+			\end{figure}
+			\\
+			\item Składanie drgań równoległych
+			\begin{itemize}
+				\item Ta sama częstościach ale różna faza i amplituda
+				\[
+				x_1(t) = A_1 \cos(\omega t + \varphi_1)
+				\]
+				\[
+				x_2(t) = A_2 \cos (\omega t + \varphi_2)
+				\]
+				\[
+				x(t) = x_1(t) + x_2(t) = A_1 \cos (\omega t + \varphi_1) + A_2 \cos (\omega t + \varphi_2) =
+				\]
+				\[
+				= A \cdot \cos (\omega t + \varphi)
+				\]
+				\[
+				A = \sqrt{A_1^2 + A_2^2 + 2A_1A_2\cos(\varphi_1 - \varphi_2)}
+				\]
+				\[
+				\tan \varphi = \frac{A_1 \sin \varphi_1 + A_2 \sin \varphi_2}{A_1 \cos \varphi_1 + A_2 \cos \varphi_2}
+				\]
+				\item Różne częstości \\
+				\textbf{Twierdzenie Fouriera}:
+				\[
+				x(t) = \frac{1}{2} A_0 + \sum\limits_{k = 1}^\infty [A_k \cos(k \omega t) + B_k \sin (k \omega t)]
+				\]
+				\item Podobna częstość (dudnienia)
+				\[
+				A[\sin (\omega_1 t) + \sin (\omega_2 t)] = A \cos \left( \frac{\omega_1 - \omega_2}{2}t \right) \sin \left( \frac{\omega_1 + \omega_2}{2}t \right)
+				\]
+			\end{itemize}
+			\item Drgania tłumione
+			\[
+			F_t = -bv
+			\]
+			\[
+			m \frac{d^2x}{dt^2} = -b \frac{dx}{dt} -kx
+			\]
+			\[
+			x(t) = A_0e^{-\beta t} \sin (\omega t + \varphi)
+			\]
+			\[
+			\omega = \sqrt{\omega_0^2 - \beta^2}
+			\]
+			\[
+			\beta = \frac{b}{2m}
+			\]
+			$
+			F_t \longrightarrow \text{siła oporu proporcjonalna do prędkości ciała i} \\ \text{przeciwnie do niej skierowana} \\
+			A_0e^{-\beta t} \longrightarrow \text{amplituda} \\
+			k \longrightarrow \text{współczynnik sprężystości} \\
+			\omega_0 \longrightarrow \text{częstość kołowa drgań} \\
+			\omega \longrightarrow \text{częstość oscylatora tłumionego} \\
+			\varphi \longrightarrow \text{początkowa faza drgań} \\
+			b \longrightarrow \text{współczynnik oporu} \\
+			\beta \longrightarrow \text{współczynnik tłumienia} \\ \\
+			$
+			\item Logarytmiczny dekrement tłumienia
+			\[
+			\Lambda = \ln \frac{A_n}{A_{n+1}} = \ln \frac{A(t)}{A(t + T)}
+			\]
+			\item Względny współczynnik tłumienia
+			\[
+			\zeta = \frac{\beta}{\omega_0}
+			\]
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=1\textwidth]{drgania_tlumione.png}
+				\caption{Drgania tłumione}
+				\label{fig:drgania_tlumione}
+			\end{figure}
+			\item Drgania wymuszone
+			\[
+			m \frac{d^2x}{dt^2} + b \frac{dx}{dt} + kx = F_0 \sin (\Omega t)
+			\]
+			\[
+			x(t) = A \sin (\Omega t + \varphi)
+			\]
+			\[
+			A = \frac{F_0}{m \sqrt{(\omega_0^2 - \Omega^2)^2 + 4 \beta^2 \Omega^2}}
+			\]
+			\[
+			\varphi = \arctan \left( - \frac{2 \beta \Omega}{\omega_0^2 - \Omega^2} \right)
+			\]
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=0.5 \textwidth]{drgania_wymuszone.png}
+				\caption{Drgania wymuszone}
+				\label{fig:drgania_wymuszone}
+			\end{figure}
+			\\ \\
+		\end{enumerate}
 		
-		\begin{table}[h]
-			\centering
-			\caption{Drgania harmoniczne - wahadło fizyczne}
-			\label{tab:Drgania harmoniczne - wahadło fizyczne}
-			\begin{tabular}{|c|c|}
-				\hline
-				\textbf{Punkt materialny} & \textbf{Bryła sztywna} \\
-				\hline
-				$F = -kx$ & $M -K\alpha$  \\
-				\hline
-				$F = ma$ & $M = I \varepsilon$ \\
-				\hline
-				$k = m \omega_0^2$ & $K = I \omega_0^2$ \\
-				\hline
-				$\omega_0 = \sqrt{\frac{k}{m}}$ & $\omega_0 = \sqrt{\frac{K}{I}}$ \\
-				\hline
-			\end{tabular}
-		\end{table}
-		\[
-		M = F_sl = -mgl \sin \alpha \approx -mgl \alpha
-		\]
-		\[
-		K = mgl
-		\]
-		\[
-		\omega_0 = \sqrt{\frac{K}{I}}
-		\]
-		\newpage
-		\[
-		T_0 = \frac{2 \pi}{\omega_0} = 2 \pi \sqrt{\frac{I}{K}} \Rightarrow T_0 = 2 \pi \sqrt{\frac{I}{mgl}}
-		\]
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=1\textwidth]{krzywe_Lissajous.png}
-			\caption{Krzywe Lissajous}
-			\label{fig:krzywe_Lissajous}
-		\end{figure}
-		\text{Składanie drgań równoległych}
-		\begin{itemize}
-			\item \text{Ta sama częstościach ale różna faza i amplituda}
-			\[
-			x_1(t) = A_1 \cos(\omega t + \varphi_1)
-			\]
-			\[
-			x_2(t) = A_2 \cos (\omega t + \varphi_2)
-			\]
-			\[
-			x(t) = x_1(t) + x_2(t) = A_1 \cos (\omega t + \varphi_1) + A_2 \cos (\omega t + \varphi_2) =
-			\]
-			\[
-			= A \cdot \cos (\omega t + \varphi)
-			\]
-			\[
-			A = \sqrt{A_1^2 + A_2^2 + 2A_1A_2\cos(\varphi_1 - \varphi_2)}
-			\]
-			\[
-			\tan \varphi = \frac{A_1 \sin \varphi_1 + A_2 \sin \varphi_2}{A_1 \cos \varphi_1 + A_2 \cos \varphi_2}
-			\]
-			\item \text{Różne częstości} \\
-			\textbf{Twierdzenie Fouriera}:
-			\[
-			x(t) = \frac{1}{2} A_0 + \sum\limits_{k = 1}^\infty [A_k \cos(k \omega t) + B_k \sin (k \omega t)]
-			\]
-			\newpage
-			\item \text{Podobna częstość (dudnienia)}
-			\[
-			A[\sin (\omega_1 t) + \sin (\omega_2 t)] = A \cos \left( \frac{\omega_1 - \omega_2}{2}t \right) \sin \left( \frac{\omega_1 + \omega_2}{2}t \right)
-			\]
-		\end{itemize}
-		\text{Drgania tłumione}
-		\[
-		F_t = -bv
-		\]
-		\[
-		m \frac{d^2x}{dt^2} = -b \frac{dx}{dt} -kx
-		\]
-		\[
-		x(t) = A_0e^{-\beta t} \sin (\omega t + \varphi)
-		\]
-		\[
-		\omega = \sqrt{\omega_0^2 - \beta^2}
-		\]
-		\[
-		\beta = \frac{b}{2m}
-		\]
-		$
-		F_t \longrightarrow \text{siła oporu proporcjonalna do prędkości ciała i} \\ \text{przeciwnie do niej skierowana} \\
-		A_0e^{-\beta t} \longrightarrow \text{amplituda} \\
-		k \longrightarrow \text{współczynnik sprężystości} \\
-		\omega_0 \longrightarrow \text{częstość kołowa drgań} \\
-		\omega \longrightarrow \text{częstość oscylatora tłumionego} \\
-		\varphi \longrightarrow \text{początkowa faza drgań} \\
-		b \longrightarrow \text{współczynnik oporu} \\
-		\beta \longrightarrow \text{współczynnik tłumienia} \\ \\
-		$
-		\text{Logarytmiczny dekrement tłumienia}
-		\[
-		\Lambda = \ln \frac{A_n}{A_{n+1}} = \ln \frac{A(t)}{A(t + T)}
-		\]
-		\text{Względny współczynnik tłumienia}
-		\[
-		\zeta = \frac{\beta}{\omega_0}
-		\]
-		\newpage
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=1\textwidth]{drgania_tlumione.png}
-			\caption{Drgania tłumione}
-			\label{fig:drgania_tlumione}
-		\end{figure}
-		\text{Drgania wymuszone}
-		\[
-		m \frac{d^2x}{dt^2} + b \frac{dx}{dt} + kx = F_0 \sin (\Omega t)
-		\]
-		\[
-		x(t) = A \sin (\Omega t + \varphi)
-		\]
-		\[
-		A = \frac{F_0}{m \sqrt{(\omega_0^2 - \Omega^2)^2 + 4 \beta^2 \Omega^2}}
-		\]
-		\[
-		\varphi = \arctan \left( - \frac{2 \beta \Omega}{\omega_0^2 - \Omega^2} \right)
-		\]
-		\newpage
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=0.5 \textwidth]{drgania_wymuszone.png}
-			\caption{Drgania wymuszone}
-			\label{fig:drgania_wymuszone}
-		\end{figure}
+		
+		
 		\item \textbf{Fale}:
 		\begin{figure}[h]
 			\centering
-			\includegraphics[width=0.75 \textwidth]{fale.png}
+			\includegraphics[width=0.5 \textwidth]{fale.png}
 			\caption{Fala kulista oraz płaska}
 			\label{fig:fale}
 		\end{figure}
 		\\
-		\text{Równanie fali}
+		Równanie fali
 		\[
 		\varPsi(x, t) = A \sin (kx - \omega t)
 		\]
 		\[
 		k = \frac{2 \pi}{\lambda}, \omega = \frac{2 \pi}{T}
 		\]
-		\text{Prędkość fali}
+		Prędkość fali
 		\[
 		V_f = \frac{\omega}{k} = \frac{\lambda}{T} = \lambda \cdot f
 		\]
@@ -794,15 +819,15 @@
 		p \longrightarrow \text{ciśnienie} \\
 		\kappa = \frac{C_p}{C_v} \\ \\
 		$
-		\text{Prędkość grupowa}
+		Prędkość grupowa
 		\[
 		V_g = \frac{d \omega}{dk}
 		\]
-		\text{Prawo załamania}
+		Prawo załamania
 		\[
 		n_{21} = \frac{n_2}{n_1} = \frac{\sin \alpha}{\sin \beta} = \frac{V_1}{V_2} = \frac{\lambda_1}{\lambda_2}
 		\]
-		\text{Interferencja fal}
+		Interferencja fal
 		\[
 		\varPsi_1 = A \sin (kx - \omega t)
 		\]
@@ -812,20 +837,20 @@
 		\[
 		\varPhi = \varPsi_1 + \varPsi_2 = 2A \cos \left( \frac{\varphi}{2} \right) \sin \left( kx - \omega t + \frac{\varphi}{2} \right)
 		\]
-		\text{Fala stojąca} \\
+		Fala stojąca \\
 		$\left.
 		\begin{array}{lll}
 			\varPsi_1 = A \sin(kx - \omega t) \\
 			+ \\
 			\varPsi_2 = A \sin(kx -+\omega t)
 		\end{array} 
-		\right\} \Longrightarrow \varPsi = \varPsi_1 + \varPsi_2 = 2A \sin (kx) \cos (\omega t)$
-		\newpage
-		\text{Maksima interferencyjne}
+		\right\} \Longrightarrow \varPsi = \varPsi_1 + \varPsi_2 = 2A \sin (kx) \cos (\omega t) \\ \\
+		$
+		Maksima interferencyjne
 		\[
 		d \cdot \sin \alpha = n \cdot \lambda
 		\]
-		\text{Minima interferencyjne}
+		Minima interferencyjne
 		\[
 		d \cdot \sin \alpha = 2(n - 1) \cdot \frac{\lambda}{2}
 		\]
@@ -833,7 +858,7 @@
 		d \longrightarrow \text{odległość pomiędzy szczelinami} \\
 		n = 0, 1, 2, 3, ... \\ \\
 		$
-		\text{Kąt Brewstera}
+		Kąt Brewstera
 		\[
 		\tan \alpha_B = n
 		\]
@@ -841,16 +866,16 @@
 		\alpha \longrightarrow \text{kąt padania światła} \\
 		n \longrightarrow \text{współczynnik załamania dielektryka} \\ \\
 		$
-		\text{Efekt Dopplera}
+		Efekt Dopplera
 		\begin{itemize}
-			\item \text{Źródło zbliża się do obserwatora}
+			\item Źródło zbliża się do obserwatora
 			\[
 			\lambda_o = \lambda_z - v_zT, \lambda = \frac{v}{f}, T = \frac{1}{f_z}
 			\]
 			\[
 			\frac{v}{f_o} = \frac{v}{f_z} - \frac{v_z}{f_z} \Rightarrow f_o = f_z \frac{v}{v - v_z}
 			\]
-			\item \text{Źródło oddala się od obserwatora}
+			\item Źródło oddala się od obserwatora
 			\[
 			\lambda_o = \lambda_z + v_zT, \lambda = \frac{v}{f}, T = \frac{1}{f_z}
 			\]
@@ -864,18 +889,18 @@
 		v_z \longrightarrow \text{prędkość źródła}
 		$
 		\newpage
-		\text{Natężenie dźwięku}
+		Natężenie dźwięku
 		\[
 		I = \frac{P}{S}
 		\]
 		\[
 		I_0 = 10^{-12} \left[ \frac{W}{m^2} \right]
 		\]
-		\text{Próg bólu}
+		Próg bólu
 		\[
 		I_B = 1 \left[ \frac{W}{m^2} \right]
 		\]
-		\text{Poziom natężenia dźwięku}
+		Poziom natężenia dźwięku
 		\[
 		L = 10 \log \frac{I}{I_0} [db]
 		\]
