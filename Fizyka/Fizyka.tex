@@ -785,125 +785,328 @@
 			\label{fig:fale}
 		\end{figure}
 		\\
-		Równanie fali
-		\[
-		\varPsi(x, t) = A \sin (kx - \omega t)
-		\]
-		\[
-		k = \frac{2 \pi}{\lambda}, \omega = \frac{2 \pi}{T}
-		\]
-		Prędkość fali
-		\[
-		V_f = \frac{\omega}{k} = \frac{\lambda}{T} = \lambda \cdot f
-		\]
-		\newpage
-		\begin{table}[h]
-			\centering
-			\caption{Drgania harmoniczne - wahadło fizyczne}
-			\label{tab:Fale w ośrodkach sprężystych}
-			\begin{tabular}{|c|c|c|c|}
-				\hline
-				& \textbf{Ciało stałe} & \textbf{Ciecz} & \textbf{Gaz} \\
-				\hline
-				Fala podłużna & $V_f = \sqrt{\frac{E}{\rho}}$ & $V_f = \sqrt{\frac{K}{\rho}}$ & $V_f = \sqrt{\frac{\kappa \cdot p}{\rho}}$ \\
-				\hline
-				Fala poprzeczna & $V_f = \sqrt{\frac{G}{\rho}}$ & - & - \\
-				\hline
-			\end{tabular}
-		\end{table}
-		$
-		\rho \longrightarrow \text{gęstość} \\
-		E \longrightarrow \text{moduł Younga} \\
-		G \longrightarrow \text{moduł sztywności} \\
-		K \longrightarrow \text{moduł ściśliwości cieczy} \\
-		p \longrightarrow \text{ciśnienie} \\
-		\kappa = \frac{C_p}{C_v} \\ \\
-		$
-		Prędkość grupowa
-		\[
-		V_g = \frac{d \omega}{dk}
-		\]
-		Prawo załamania
-		\[
-		n_{21} = \frac{n_2}{n_1} = \frac{\sin \alpha}{\sin \beta} = \frac{V_1}{V_2} = \frac{\lambda_1}{\lambda_2}
-		\]
-		Interferencja fal
-		\[
-		\varPsi_1 = A \sin (kx - \omega t)
-		\]
-		\[
-		\varPsi_2 = A \sin (kx - \omega t + \varphi)
-		\]
-		\[
-		\varPhi = \varPsi_1 + \varPsi_2 = 2A \cos \left( \frac{\varphi}{2} \right) \sin \left( kx - \omega t + \frac{\varphi}{2} \right)
-		\]
-		Fala stojąca \\
-		$\left.
-		\begin{array}{lll}
-			\varPsi_1 = A \sin(kx - \omega t) \\
-			+ \\
-			\varPsi_2 = A \sin(kx -+\omega t)
-		\end{array} 
-		\right\} \Longrightarrow \varPsi = \varPsi_1 + \varPsi_2 = 2A \sin (kx) \cos (\omega t) \\ \\
-		$
-		Maksima interferencyjne
-		\[
-		d \cdot \sin \alpha = n \cdot \lambda
-		\]
-		Minima interferencyjne
-		\[
-		d \cdot \sin \alpha = 2(n - 1) \cdot \frac{\lambda}{2}
-		\]
-		$
-		d \longrightarrow \text{odległość pomiędzy szczelinami} \\
-		n = 0, 1, 2, 3, ... \\ \\
-		$
-		Kąt Brewstera
-		\[
-		\tan \alpha_B = n
-		\]
-		$
-		\alpha \longrightarrow \text{kąt padania światła} \\
-		n \longrightarrow \text{współczynnik załamania dielektryka} \\ \\
-		$
-		Efekt Dopplera
-		\begin{itemize}
-			\item Źródło zbliża się do obserwatora
+		\begin{enumerate}
+			\item Równanie fali
 			\[
-			\lambda_o = \lambda_z - v_zT, \lambda = \frac{v}{f}, T = \frac{1}{f_z}
+			\varPsi(x, t) = A \sin (kx - \omega t)
 			\]
 			\[
-			\frac{v}{f_o} = \frac{v}{f_z} - \frac{v_z}{f_z} \Rightarrow f_o = f_z \frac{v}{v - v_z}
+			k = \frac{2 \pi}{\lambda}, \omega = \frac{2 \pi}{T}
 			\]
-			\item Źródło oddala się od obserwatora
+			\item Prędkość fali
 			\[
-			\lambda_o = \lambda_z + v_zT, \lambda = \frac{v}{f}, T = \frac{1}{f_z}
+			V_f = \frac{\omega}{k} = \frac{\lambda}{T} = \lambda \cdot f
+			\]
+			\newpage
+			\begin{table}[h]
+				\centering
+				\caption{Drgania harmoniczne - wahadło fizyczne}
+				\label{tab:Fale w ośrodkach sprężystych}
+				\begin{tabular}{|c|c|c|c|}
+					\hline
+					& \textbf{Ciało stałe} & \textbf{Ciecz} & \textbf{Gaz} \\
+					\hline
+					Fala podłużna & $V_f = \sqrt{\frac{E}{\rho}}$ & $V_f = \sqrt{\frac{K}{\rho}}$ & $V_f = \sqrt{\frac{\kappa \cdot p}{\rho}}$ \\
+					\hline
+					Fala poprzeczna & $V_f = \sqrt{\frac{G}{\rho}}$ & - & - \\
+					\hline
+				\end{tabular}
+			\end{table}
+			$
+			\rho \longrightarrow \text{gęstość} \\
+			E \longrightarrow \text{moduł Younga} \\
+			G \longrightarrow \text{moduł sztywności} \\
+			K \longrightarrow \text{moduł ściśliwości cieczy} \\
+			p \longrightarrow \text{ciśnienie} \\
+			\kappa = \frac{C_p}{C_v} \\ \\
+			$
+			\item Prędkość grupowa
+			\[
+			V_g = \frac{d \omega}{dk}
+			\]
+			\item Prawo załamania
+			\[
+			n_{21} = \frac{n_2}{n_1} = \frac{\sin \alpha}{\sin \beta} = \frac{V_1}{V_2} = \frac{\lambda_1}{\lambda_2}
+			\]
+			\item Interferencja fal
+			\[
+			\varPsi_1 = A \sin (kx - \omega t)
 			\]
 			\[
-			\frac{v}{f_o} = \frac{v}{f_z} + \frac{v_z}{f_z} \Rightarrow f_o = f_z \frac{v}{v + v_z}
+			\varPsi_2 = A \sin (kx - \omega t + \varphi)
 			\]
-		\end{itemize}
+			\[
+			\varPhi = \varPsi_1 + \varPsi_2 = 2A \cos \left( \frac{\varphi}{2} \right) \sin \left( kx - \omega t + \frac{\varphi}{2} \right)
+			\]
+			\item Fala stojąca \\
+			$\left.
+			\begin{array}{lll}
+				\varPsi_1 = A \sin(kx - \omega t) \\
+				+ \\
+				\varPsi_2 = A \sin(kx -+\omega t)
+			\end{array} 
+			\right\} \Longrightarrow \varPsi = \varPsi_1 + \varPsi_2 = 2A \sin (kx) \cos (\omega t) \\ \\
+			$
+			\item Maksima interferencyjne
+			\[
+			d \cdot \sin \alpha = n \cdot \lambda
+			\]
+			\item Minima interferencyjne
+			\[
+			d \cdot \sin \alpha = 2(n - 1) \cdot \frac{\lambda}{2}
+			\]
+			$
+			d \longrightarrow \text{odległość pomiędzy szczelinami} \\
+			n = 0, 1, 2, 3, ... \\ \\
+			$
+			\item Kąt Brewstera
+			\[
+			\tan \alpha_B = n
+			\]
+			$
+			\alpha \longrightarrow \text{kąt padania światła} \\
+			n \longrightarrow \text{współczynnik załamania dielektryka} \\ \\
+			$
+			\item Efekt Dopplera
+			\begin{itemize}
+				\item Źródło zbliża się do obserwatora
+				\[
+				\lambda_o = \lambda_z - v_zT, \lambda = \frac{v}{f}, T = \frac{1}{f_z}
+				\]
+				\[
+				\frac{v}{f_o} = \frac{v}{f_z} - \frac{v_z}{f_z} \Rightarrow f_o = f_z \frac{v}{v - v_z}
+				\]
+				\item Źródło oddala się od obserwatora
+				\[
+				\lambda_o = \lambda_z + v_zT, \lambda = \frac{v}{f}, T = \frac{1}{f_z}
+				\]
+				\[
+				\frac{v}{f_o} = \frac{v}{f_z} + \frac{v_z}{f_z} \Rightarrow f_o = f_z \frac{v}{v + v_z}
+				\]
+			\end{itemize}
+			$
+			v \longrightarrow \text{prędkość fali} \\
+			v_o \longrightarrow \text{prędkość obserwatora} \\
+			v_z \longrightarrow \text{prędkość źródła}
+			$
+			\newpage
+			\item Natężenie dźwięku
+			\[
+			I = \frac{P}{S}
+			\]
+			\[
+			I_0 = 10^{-12} \left[ \frac{W}{m^2} \right]
+			\]
+			\item Próg bólu
+			\[
+			I_B = 1 \left[ \frac{W}{m^2} \right]
+			\]
+			\item Poziom natężenia dźwięku
+			\[
+			L = 10 \log \frac{I}{I_0} [db]
+			\]
+		\end{enumerate}
+		
+		\item \textbf{Mechanika płynów}:
+		\begin{enumerate}
+			\item Ciśnienie
+			\[
+			p = \frac{F_N}{S} \left[ 1Pa = \frac{1 N}{1 m^2} \right]
+			\]
+			$
+			F_N \longrightarrow \text{wartość składowej normalnej siły} \\
+			\text{1 bar =} 10^5 \text{Pa} \\
+			\text{1 tor [Tr] = 1 mm Hg = 133 Pa} \\
+			\text{1 atmosfera techniczna (at) = 1} \frac{kg}{cm^2} \text{= 98066,5 Pa} \\
+			\text{1 atmosfera fizyczna (atm) = 760 Tr = 101325 Pa} \\
+			1 psi \left( \frac{\text{funt}}{\text{in}^2} \right) = \text{6894,76 Pa} \\
+			$
+			\[
+			0,1 MPa \approx 1 at \approx 1 bar = 10 m H_2O
+			\]
+			\item Ciśnienie cieczy
+			\[
+			F_2 = F_1 + mg
+			\]
+			\[
+			F_1 = p_1S, F_2 = p_2S, m = \rho S (h_1 - h_2)
+			\]
+			\[
+			p_2S = p_1S + \rho gS(h_1 - h_2)
+			\]
+			\[
+			p_2 = p_1 + \rho g (h_1 - h_2)
+			\]
+			\newpage
+			\item Prasa hydrauliczna
+			\[
+			\Delta p = \frac{F_\text{wej}}{S_\text{wej}} = \frac{F_\text{wyj}}{S_\text{wyj}}
+			\]
+			\[
+			V = S_\text{wej} y_\text{wej} = S_\text{wyj} y_\text{wyj}
+			\]
+			\[
+			W = F_\text{wyj} y_\text{wyj} = F_\text{wej} \frac{S_\text{wyj}}{S_\text{wej}} y_\text{wej} \frac{S_\text{wej}}{S_\text{wyj}} = F_\text{wej} y_\text{wej}
+			\]
+			\item Napięcie powierzchniowe
+			\[
+			\sigma \frac{W}{S}
+			\]
+		\end{enumerate}
+		
+		\item \textbf{Dynamika płynów}
+		\begin{enumerate}
+			\item Równanie ciągłości
+			\[
+			\Delta V_1 = \Delta V_2
+			\]
+			\[
+			\Delta x_1S_1 = \Delta x_2S_2
+			\]
+			\[
+			\frac{\Delta x_1S_1}{\Delta t} = \frac{\Delta x_2S_2}{\Delta t}
+			\]
+			\[
+			v_1S_1 = v_2S_2 = const
+			\]
+			\[
+			\rho = const
+			\]
+			\[
+			\rho v_1S_1 = \rho v_1S_2 = const
+			\]
+			\item Równanie Bernoulli'ego
+			\[
+			W = F_1 v_1 \Delta t - F_2 v_2 \Delta t = p_1 S_1 v_1 \Delta t - p_2 S_2 v_2 \Delta t
+			\]
+			\[
+			W = (p_1 - p_2)V = \left( \frac{mv_2^2}{2} + mgh_2 \right) - \left( \frac{mv_1^2}{2} + mgh_1 \right)
+			\]
+			\[
+			p_1 + \frac{\rho v_1^2}{2} + \rho gh_1 =  p_2 + \frac{\rho v_2^2}{2} + \rho gh_2
+			\]
+			\item Lepkość płynów
+			\[
+			F = \eta \frac{dv}{dr}S
+			\]
+			\newpage
+			$
+			F \longrightarrow \text{siła oporu przy ruchu warstw płynu względem siebie} \\
+			dv \longrightarrow \text{względna prędkość trących o siebie równoległych} \\ \text{warstw płynu} \\
+			dr \longrightarrow \text{odległość między warstwami} \\
+			S \longrightarrow \text{pole powierzchni warstw} \\
+			\eta \longrightarrow \text{współczynnik lepkości dynamicznej płynu (lepkość płynu)} \\
+			$
+			\[
+			\frac{F}{S} = \eta \frac{dv}{dr}
+			\]
+			\item Siła oporu ośrodka \\
+			 \textbf{Wzór Stokesa}
+			\[
+			F_o = 6 \pi \eta Rv
+			\]
+			\[
+			\rho_\text{ciecz} Vg + 6 \pi \eta Rv_g = mg \Rightarrow v_g = \frac{2R^2g (\rho_\text{kulka} - \rho_\text{ciecz})}{9 \eta}
+			\]
+		\end{enumerate}
+		
+		\item \textbf{Termodynamika}:
+		\[
+		T_C = (T - 273,15) \text{\textdegree} C \Longrightarrow \Delta T_C[\text{\textdegree} C] = \Delta T [K]
+		\]
+		\begin{enumerate}
+			\item Ciepło pobrane (oddane)
+			\[
+			Q = mc_2 \Delta T
+			\]
+			\[
+			Q = mc_\text{przem}
+			\]
+			$
+			c_w \longrightarrow \text{ciepło właściwe} \\
+			C = c_w \cdot m \longrightarrow \text{pojemność cieplna} \\
+			c_\text{przem} \longrightarrow \text{ciepło przemiany} \\
+			$
+			\item Przewodzenie ciepła
+			\[
+			\frac{dQ}{dt} = - \lambda A \frac{dT}{dx}
+			\]
+			$
+			\frac{dQ}{dt} \longrightarrow \text{strumień ciepła} \\
+			\lambda \longrightarrow \text{współczynnik przewodnictwa cieplnego} \\
+			A \longrightarrow \text{pole powierzchni} \\
+			\frac{dT}{dx} \longrightarrow \text{gradient temperatury} \\
+			$
+			\newpage
+			\item Rozszerzalność cieplna ciał stałych
+			\[
+			l = l_0 (1 + \alpha \Delta T)
+			\]
+			\item Rozszerzalność cieplna cieczy
+			\[
+			\Delta V = V_0 \beta \Delta T
+			\]
+			\item Promieniowanie cieplne \\
+			\textbf{Prawo Kirchhoffa}
+			\[
+			\frac{E (\lambda, T)}{A (\lambda, T)} = \varepsilon (\lambda, T)
+			\]
+			$
+			\varepsilon (\lambda, T) \longrightarrow \text{Stała uniwersalna, jednakowa dla wszystkich ciał} \\
+			$
+			\textbf{Prawo Stefana-Boltzmanna}
+			\[
+			\varepsilon_T = \sigma T^4
+			\]
+			$
+			\varepsilon_T \longrightarrow \text{moc emitowana przez jednostkę powierzchni ciała} \\
+			\sigma = 5,67 \cdot 10^{-8} \frac{W}{m^2 \cdot K^4} \\
+			$
+			\textbf{Prawo Wienna}
+			\[
+			\lambda_\text{max} = \frac{b}{T}
+			\]
+			$
+			b = 2898 \cdot 10^{-3} \mu m \cdot K \longrightarrow \text{Stała Wienna} \\
+			$
+			\item Praca
+			\[
+			W = -p \cdot \Delta V
+			\]
+			$
+			p \longrightarrow \text{ciśnienie} \\
+			\Delta V \longrightarrow \text{zmiana objętości} \\
+			$
+			\[
+			W = \int dW = - \int\limits_{V_1}^{V_2} p \cdot dV
+			\]
+		\end{enumerate}
+		
+		\item \textbf{Pierwsza zasada termodynamiki}:
+		\[
+		\Delta U = \Delta Q + W
+		\]
 		$
-		v \longrightarrow \text{prędkość fali} \\
-		v_o \longrightarrow \text{prędkość obserwatora} \\
-		v_z \longrightarrow \text{prędkość źródła}
+		Q > 0 \longrightarrow \text{ciepło dostarczone do układu} \\
+		Q < 0 \longrightarrow \text{ciepło oddawane przez układu} \\
+		W > 0 \longrightarrow \text{praca wykonywana nad układem przez siły zewnętrzne} \\
+		W < 0 \longrightarrow \text{praca wykonana przez układ} \\
 		$
-		\newpage
-		Natężenie dźwięku
+		
+		\item \textbf{Druga zasada termodynamiki}:
 		\[
-		I = \frac{P}{S}
+		Q_\text{pobr} = W + Q_\text{odd}
 		\]
 		\[
-		I_0 = 10^{-12} \left[ \frac{W}{m^2} \right]
+		\eta = \frac{W}{Q_\text{pobr}} = \frac{Q_\text{pobr} - Q_\text{odd}}{Q_\text{pobr}}
 		\]
-		Próg bólu
 		\[
-		I_B = 1 \left[ \frac{W}{m^2} \right]
+		dS = \frac{dQ}{T}
 		\]
-		Poziom natężenia dźwięku
 		\[
-		L = 10 \log \frac{I}{I_0} [db]
+		S = k \cdot \ln \Omega
 		\]
+		
 	
 	\end{enumerate}
 	
